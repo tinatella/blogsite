@@ -1,0 +1,109 @@
+.navbar {
+    color: white;
+    background-color: #eccbcb11;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: "Josefin Sans", serif;
+}
+a, a:active, a:link, a::before, a::after{
+    color: white;
+    text-decoration: none;
+
+}
+.navbar .wrapper {
+    width: 100%;
+    max-width: 1366px;
+    display: flex;
+}
+.navbar .left, .navbar .right {
+    display: flex;
+    flex: 3;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navbar .wrapper .left{
+    font-size: 1.3rem;
+}
+.navbar .center {
+    display: flex;
+    height: 100%;
+    flex: 6;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navbar .right span img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.navbar .right .searchEngine {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.navbar .right .searchEngine i {
+    position: absolute;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.navbar .wrapper .right .searchEngine input {
+    width: 80%;
+    margin-right: 20px;
+    height: 25px;
+    border-radius: 3px;
+    padding: 0px 0px 0px 10px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.navbar .wrapper .right .searchEngine {
+    width: 0px;
+    transition: all 0.5s;
+}
+.navbar .wrapper .right .searchEngine.active {
+    width: 60%;
+}
+.navbar .wrapper .right .searchEngine.active input {
+    opacity: 1;
+}
+.navbar .wrapper{
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateY(-10px);
+}
+.navbar .wrapper.active{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.navbar .left i{
+    transition: all 0.5s;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+.navbar .wrapper.active .left i{
+    transition: all 0.4s;
+    transform: translateY(0px);
+    opacity: 1;
+
+}
+.navbar .wrapper.active .left i:nth-child(2){
+    transition-duration: 0.6s;
+}
+.navbar .wrapper.active .left i:nth-child(3){
+    transition-duration: 0.8s;
+}
+.navbar .wrapper.active .left i:nth-child(4){
+    transition-duration: 1s;
+}

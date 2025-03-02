@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/css/loginStyle.css">
+  <!-- <link rel="stylesheet" href="/public/css/index.css"> -->
+  <link rel="stylesheet" href="/public/css/reg_navbar.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/public/css/logReg.css">
+  <script type="module" defer src="/public/js/login.js"></script>
+  <title>Login</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="wrapper target">
+
+      <div class="left target">
+        <a href="">
+          <i class="fa-brands fa-square-instagram"></i>
+        </a>
+
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-pinterest"></i>
+        <i class="fa-brands fa-square-x-twitter"></i>
+      </div>
+      <div class="center">
+        <a href="/index.html">HOME</a>
+        <a href="/pages/about.html">ABOUT</a>
+        <a href="/pages/register2.html">REGISTER</a>
+        <a href="/pages/login2.html">LOGIN</a>
+      </div>
+      <div class="right">
+        <span>
+          <img src="/public/img/logo.jpg" alt="user">
+        </span>
+        <div class="searchEngine" id="searchEngine">
+          <input type="text">
+          <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+  <div id="app">
+    <div id="hero">
+      
+      <div class="logReg">
+             
+        <form>
+            <div class="formGroup">
+                <input type="Email" required>
+                <span>Email</span>
+
+                <!-- <input type="email" placeholder="Email"> -->
+                <!-- <span>Email</span> -->
+
+            </div>
+
+
+            <div class="formGroup">
+                <input type="text" required>
+                <span>Username</span>
+
+            </div>
+
+
+            <div class="formGroup">
+                <input type="text" required>
+                <span>Password</span>
+
+            </div>
+            <div class="btnGroup">
+                <a href="/pages/login2.html">Do You Have An Account?</a>
+                <button type="submit">Register</button>
+            </div>
+
+        </form>
+    </div>
+    </div>
+  </div>
+  <script src="/public/js/search.js"></script>
+  <script src="/public/js/scroll.js"></script>
+
+</body>
+
+</html>
